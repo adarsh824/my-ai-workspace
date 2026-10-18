@@ -69,8 +69,8 @@ const DEFAULT_PROJECTS = [
     buildNum: 'Build 3',
     title: 'Personal AI Study Kit',
     desc: 'Modular framework transforming syllabus modules, lecture notes, and textbook PDFs into active recall flashcards and practice quizzes.',
-    status: 'Completed', // Supported by Build_3_Personal_AI_Study_Kit_Adarsh_Bairagi.pdf
-    link: 'knowledge base/Build_3_Personal_AI_Study_Kit_Adarsh_Bairagi.pdf'
+    status: 'Completed', // Supported by Build_3_Personal_AI_Study_Kit_IMCA_Student.pdf
+    link: 'knowledge base/Build_3_Personal_AI_Study_Kit_IMCA_Student.pdf'
   },
   {
     id: 'build-4',
@@ -106,15 +106,15 @@ const DEFAULT_KB_ITEMS = [
     title: 'build_2_personal_ai_study_kit.pdf.pdf',
     type: 'file',
     location: 'knowledge base/build_2_personal_ai_study_kit.pdf.pdf',
-    notes: 'Official Build 2 assignment submission by Adarsh Bairagi (IMCA 2nd Year). Status: Build 2 Completed with 10 tested prompts and 3 reusable templates.',
+    notes: 'Official Build 2 assignment submission by IMCA_Student (IMCA 2nd Year). Status: Build 2 Completed with 10 tested prompts and 3 reusable templates.',
     createdAt: '14/10/2026'
   },
   {
     id: 'kb-file-build-3',
     sectionId: 'build-3-study-kit',
-    title: 'Build_3_Personal_AI_Study_Kit_Adarsh_Bairagi.pdf',
+    title: 'Build_3_Personal_AI_Study_Kit_IMCA_Student.pdf',
     type: 'file',
-    location: 'knowledge base/Build_3_Personal_AI_Study_Kit_Adarsh_Bairagi.pdf',
+    location: 'knowledge base/Build_3_Personal_AI_Study_Kit_IMCA_Student.pdf',
     notes: 'Official Build 3 placement aptitude revision kit containing formulas, a 10-question MCQ quiz with full explanations, 22 flashcards, and verified sources.',
     createdAt: '17/10/2026'
   },
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Load persistent data from LocalStorage
 function loadData() {
   const OLD_PATH_MAP = {
-    'knowledge base/Hands-On Lab_ Comparing AI Tools - Adarsh Bairagi.pdf': 'knowledge base/build_1_ai_tools_comparison.pdf.pdf',
+    'knowledge base/Hands-On Lab_ Comparing AI Tools - IMCA_Student.pdf': 'knowledge base/build_1_ai_tools_comparison.pdf.pdf',
     'knowledge base/Personal Prompt Playbook - Build 2.pdf': 'knowledge base/build_2_personal_ai_study_kit.pdf.pdf',
     'knowledge base/Career_Starter_Pack_Assignment.pdf': 'knowledge base/build_4_career_starter_pack.pdf.pdf'
   };
