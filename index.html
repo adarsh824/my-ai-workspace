@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My AI Workspace | IMCA Student Dashboard</title>
+  <meta name="description" content="Personal AI Workspace for IMCA Second-Year Student: Exams, Python Programming, AI Skills & Internship Prep.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-group">
+        <div class="logo-badge">AI</div>
+        <div>
+          <div class="logo-title">My AI Workspace</div>
+          <div class="logo-subtitle">IMCA 2nd Year • Study & Career OS</div>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#tools" class="nav-link active">Tools</a></li>
+        <li><a href="#prompts" class="nav-link">Prompt Library</a></li>
+        <li><a href="#knowledge-base" class="nav-link">Knowledge Base</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="portfolio.html" class="nav-link nav-link-cta">Portfolio Showcase →</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section & Student Profile -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-meta">
+          <span class="badge badge-blue">🎓 IMCA Second-Year</span>
+          <span class="badge badge-violet">🐍 Python & AI Focus</span>
+          <span class="badge badge-amber">💼 Internship Prep</span>
+          <span class="badge badge-green">🚀 Active Workspace</span>
+        </div>
+        <h1 class="hero-title">Welcome to <span>My AI Workspace</span></h1>
+        <p class="hero-desc">
+          A dedicated personal operations hub engineered to accelerate university exam preparation, master clean Python programming, hone production-grade AI prompt engineering, and build a competitive portfolio for upcoming software internships.
+        </p>
+
+        <!-- Stats Overview -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-blue">🛠️</div>
+            <div>
+              <div class="stat-value" id="statToolsCount">4</div>
+              <div class="stat-label">AI Tools Configured</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-violet">⚡</div>
+            <div>
+              <div class="stat-value" id="statPromptsCount">10</div>
+              <div class="stat-label">Reusable Prompts</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-green">📚</div>
+            <div>
+              <div class="stat-value" id="statKbCount">0</div>
+              <div class="stat-label">Knowledge Items Attached</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-amber">🎯</div>
+            <div>
+              <div class="stat-value" id="statProjectsProgress">1/6 Completed</div>
+              <div class="stat-label">Projects Tracker Status</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Areas -->
+  <main class="container">
+
+    <!-- 1. TOOLS AREA -->
+    <section id="tools" class="section-wrapper">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge-num">1</span>
+          <div>
+            <h2 class="section-title">AI Tools</h2>
+            <p class="section-subtitle">Your core daily generative AI suite. Customize real links for your personal workspace or university accounts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tools-grid" id="toolsContainer">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- 2. PROMPT LIBRARY AREA -->
+    <section id="prompts" class="section-wrapper">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge-num">2</span>
+          <div>
+            <h2 class="section-title">Prompt Library</h2>
+            <p class="section-subtitle">10 battle-tested, structured prompts for university exams, Python code reviews, research, and internship outreach.</p>
+          </div>
+        </div>
+        <span class="badge badge-violet" id="promptCountBadge">10 Prompts Available</span>
+      </div>
+
+      <!-- Controls: Search & Category Filters -->
+      <div class="prompts-controls">
+        <div class="search-input-wrap">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input 
+            type="text" 
+            id="promptSearchInput" 
+            class="search-input" 
+            placeholder="Search prompts by title, category, concept, Python, or exam keyword..."
+          >
+        </div>
+
+        <div class="category-filters" id="categoryFilters">
+          <!-- Injected dynamically by app.js -->
+        </div>
+      </div>
+
+      <div class="prompts-grid" id="promptsContainer">
+        <!-- Injected dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- 3. KNOWLEDGE BASE AREA -->
+    <section id="knowledge-base" class="section-wrapper">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge-num">3</span>
+          <div>
+            <h2 class="section-title">Knowledge Base</h2>
+            <p class="section-subtitle">Organized repository for your genuine study files, syllabus notes, and Build resources. Add real local paths or URLs.</p>
+          </div>
+        </div>
+        <button class="btn btn-primary" onclick="openAddResourceModal('build-2-playbook')">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <span>+ Add Resource</span>
+        </button>
+      </div>
+
+      <div class="kb-layout" id="kbSectionsContainer">
+        <!-- Injected dynamically by app.js with sections for:
+             - Build 2: Personal Prompt Playbook
+             - Build 3: Personal AI Study Kit
+             - Build 5: 10-Step Prompt Chain — Python Basics
+             - Academic notes and learning resources
+        -->
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS TRACKER AREA -->
+    <section id="projects" class="section-wrapper">
+      <div class="section-header">
+        <div class="section-title-wrap">
+          <span class="section-badge-num">4</span>
+          <div>
+            <h2 class="section-title">Projects Tracker</h2>
+            <p class="section-subtitle">Track your 6 foundational builds with editable statuses and direct project repository/file links.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsContainer">
+        <!-- Injected dynamically by app.js with cards for Builds 1-6 -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>My AI Workspace</strong> — Built for IMCA 2nd Year Student Success</p>
+        <p style="font-size: 0.78rem; margin-top: 4px;">Exams • Python Programming • AI Engineering • Internship Prep</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Dashboard</a>
+        <a href="portfolio.html">Portfolio Page</a>
+        <a href="#prompts">Prompts</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: View Full Prompt Details -->
+  <div class="modal-overlay" id="promptModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title" id="promptModalTitle">Prompt Template</h3>
+        <button class="modal-close" onclick="closeModal('promptModal')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body" id="promptModalBody">
+        <!-- Injected dynamically -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeModal('promptModal')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Add Real Knowledge Base Resource -->
+  <div class="modal-overlay" id="kbModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">Add Real Resource</h3>
+        <button class="modal-close" onclick="closeModal('kbModal')" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label" for="kbModalSection">Knowledge Base Section:</label>
+          <select id="kbModalSection" class="form-select">
+            <option value="build-2-playbook">Build 2: Personal Prompt Playbook</option>
+            <option value="build-3-study-kit">Build 3: Personal AI Study Kit</option>
+            <option value="build-5-chain">Build 5: 10-Step Prompt Chain — Python Basics</option>
+            <option value="academic-resources">Academic Notes & Learning Resources</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="kbModalTitle">Resource Title / Topic:</label>
+          <input type="text" id="kbModalTitle" class="form-input" placeholder="e.g. Unit 3 DBMS Normalization Notes or Python OOP Script">
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="kbModalType">Resource Type:</label>
+          <select id="kbModalType" class="form-select">
+            <option value="link">Web URL (Google Drive / GitHub / Notion / Webpage)</option>
+            <option value="file">Local File Path (PDF / .py / Markdown / Docx)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="kbModalLocation">Real Link or File Path:</label>
+          <input type="text" id="kbModalLocation" class="form-input" placeholder="e.g. https://drive.google.com/... or C:/Users/.../notes.pdf">
+          <span style="font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;">Enter your real link or local file system path. No dummy links will be generated.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="kbModalNotes">Key Notes / Tags (Optional):</label>
+          <textarea id="kbModalNotes" class="form-textarea" placeholder="e.g. Crucial 10-mark exam questions, solved lab problems..."></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" onclick="closeModal('kbModal')">Cancel</button>
+        <button class="btn btn-primary" onclick="saveKbItem()">Save Resource</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/prompts-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

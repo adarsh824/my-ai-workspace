@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Showcase | My AI Workspace (Builds 1–6)</title>
+  <meta name="description" content="Portfolio Showcase of Builds 1 to 6 - IMCA Second-Year Student preparing for exams, Python programming, AI skills and future internships.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-group">
+        <div class="logo-badge">AI</div>
+        <div>
+          <div class="logo-title">My AI Workspace</div>
+          <div class="logo-subtitle">IMCA 2nd Year • Student Portfolio</div>
+        </div>
+      </a>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">← Back to Dashboard</a></li>
+        <li><a href="index.html#tools" class="nav-link">Tools</a></li>
+        <li><a href="index.html#prompts" class="nav-link">Prompt Library</a></li>
+        <li><a href="index.html#knowledge-base" class="nav-link">Knowledge Base</a></li>
+        <li><a href="portfolio.html" class="nav-link active">Portfolio Showcase</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Portfolio Header & Profile -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-meta">
+          <span class="badge badge-violet">🌟 Student Portfolio Showcase</span>
+          <span class="badge badge-blue">IMCA 2nd Year</span>
+          <span class="badge badge-amber">Builds 1 to 6</span>
+        </div>
+        <h1 class="hero-title">Academic & Technical <span>AI Portfolio</span></h1>
+        <p class="hero-desc">
+          Demonstrating practical application of artificial intelligence across academic coursework, Python software engineering, systematic prompt engineering, and career readiness. This portfolio documents six structured milestone builds developed during the second year of Integrated Master of Computer Applications (IMCA).
+        </p>
+
+        <!-- Core Competencies Matrix -->
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-blue">🐍</div>
+            <div>
+              <div class="stat-value">Python</div>
+              <div class="stat-label">OOP, DSA, File I/O & Clean Code</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-violet">🧠</div>
+            <div>
+              <div class="stat-value">Prompting</div>
+              <div class="stat-label">Few-shot, Chains, Verification</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-green">📖</div>
+            <div>
+              <div class="stat-value">Exam Mastery</div>
+              <div class="stat-label">Active Recall, 5/10-Mark Outlines</div>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon stat-icon-amber">💼</div>
+            <div>
+              <div class="stat-value">Internships</div>
+              <div class="stat-label">Tech Outreach, Resumes, Viva</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MANDATORY STUDENT PLEDGE NOTE SECTION -->
+      <div class="pledge-card">
+        <div class="pledge-icon-badge">
+          <span>🎯</span>
+          <span>Monthly Commitment & Action Plan</span>
+        </div>
+        <p class="pledge-quote">
+          “Next month, I will use My AI Workspace to organise my study materials, revise important exam topics, practise Python, improve my prompts and prepare for internships. I will review my progress weekly and verify important information before using it.”
+        </p>
+        <div class="pledge-author">
+          <span style="color: var(--accent-blue); font-weight: 600;">— IMCA Second-Year Student</span>
+          <span>•</span>
+          <span>My AI Workspace Action Plan</span>
+        </div>
+      </div>
+
+      <!-- BUILDS 1 TO 6 SHOWCASE -->
+      <section class="section-wrapper" style="padding-top: 10px;">
+        <div class="section-header">
+          <div>
+            <h2 class="section-title">Foundational Builds (1–6)</h2>
+            <p class="section-subtitle">Comprehensive descriptions of the six milestone projects composing this AI Workspace.</p>
+          </div>
+          <a href="index.html#projects" class="btn btn-secondary btn-sm">Edit Statuses on Dashboard →</a>
+        </div>
+
+        <div class="portfolio-builds-grid" id="portfolioBuildsContainer">
+          <!-- Injected dynamically by portfolio.js -->
+        </div>
+      </section>
+
+      <!-- Verification & Responsible AI Notice -->
+      <div style="background: var(--bg-secondary); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 24px; margin-top: 24px; margin-bottom: 40px;">
+        <h3 style="font-size: 1.1rem; color: var(--accent-blue); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+          <span>🛡️</span>
+          <span>Academic Integrity & AI Verification Protocol</span>
+        </h3>
+        <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+          In accordance with the student commitment, all outputs generated by artificial intelligence tools (ChatGPT, Gemini Notebook, Perplexity, and Antigravity) are systematically reviewed, cross-referenced against authoritative textbooks and official Python documentation, and verified for mathematical and logical validity prior to academic submission.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <p><strong>My AI Workspace</strong> — Built for IMCA 2nd Year Student Success</p>
+        <p style="font-size: 0.78rem; margin-top: 4px;">Exams • Python Programming • AI Engineering • Internship Prep</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Dashboard</a>
+        <a href="portfolio.html">Portfolio Page</a>
+        <a href="index.html#prompts">Prompts</a>
+        <a href="index.html#projects">Projects</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
