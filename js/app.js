@@ -53,16 +53,16 @@ const DEFAULT_PROJECTS = [
     buildNum: 'Build 1',
     title: 'AI Tools Comparison',
     desc: 'Systematic analysis comparing ChatGPT, Gemini, Perplexity and Antigravity across speed, reasoning, coding, and citation accuracy for IMCA coursework.',
-    status: 'Completed', // Supported by build_1_ai_tools_comparison.pdf.pdf
-    link: 'knowledge base/build_1_ai_tools_comparison.pdf.pdf'
+    status: 'Completed', // Supported by build_1_ai_tools_comparison.pdf
+    link: 'knowledge base/build_1_ai_tools_comparison.pdf'
   },
   {
     id: 'build-2',
     buildNum: 'Build 2',
     title: 'Personal Prompt Playbook',
     desc: 'Curated repository of tested prompts for exam revisions, Python coding, numerical algorithms, and project planning.',
-    status: 'Completed', // Supported by build_2_personal_ai_study_kit.pdf.pdf (Status: Build 2 Completed)
-    link: 'knowledge base/build_2_personal_ai_study_kit.pdf.pdf'
+    status: 'Completed', // Supported by build_2_personal_ai_study_kit.pdf (Status: Build 2 Completed)
+    link: 'knowledge base/build_2_personal_ai_study_kit.pdf'
   },
   {
     id: 'build-3',
@@ -77,8 +77,8 @@ const DEFAULT_PROJECTS = [
     buildNum: 'Build 4',
     title: 'Career Starter Pack',
     desc: 'Internship readiness hub: professional cold email templates, tech resume prompt chains, LinkedIn networking scripts, and coding interview prep.',
-    status: 'In Progress', // Supported by build_4_career_starter_pack.pdf.pdf: Ready-to-edit draft with placeholders
-    link: 'knowledge base/build_4_career_starter_pack.pdf.pdf'
+    status: 'In Progress', // Supported by build_4_career_starter_pack.pdf: Ready-to-edit draft with placeholders
+    link: 'knowledge base/build_4_career_starter_pack.pdf'
   },
   {
     id: 'build-5',
@@ -103,9 +103,9 @@ const DEFAULT_KB_ITEMS = [
   {
     id: 'kb-file-build-2',
     sectionId: 'build-2-playbook',
-    title: 'build_2_personal_ai_study_kit.pdf.pdf',
+    title: 'build_2_personal_ai_study_kit.pdf',
     type: 'file',
-    location: 'knowledge base/build_2_personal_ai_study_kit.pdf.pdf',
+    location: 'knowledge base/build_2_personal_ai_study_kit.pdf',
     notes: 'Official Build 2 assignment submission by IMCA_Student (IMCA 2nd Year). Status: Build 2 Completed with 10 tested prompts and 3 reusable templates.',
     createdAt: '14/10/2026'
   },
@@ -130,18 +130,18 @@ const DEFAULT_KB_ITEMS = [
   {
     id: 'kb-file-build-1',
     sectionId: 'academic-resources',
-    title: 'build_1_ai_tools_comparison.pdf.pdf',
+    title: 'build_1_ai_tools_comparison.pdf',
     type: 'file',
-    location: 'knowledge base/build_1_ai_tools_comparison.pdf.pdf',
+    location: 'knowledge base/build_1_ai_tools_comparison.pdf',
     notes: 'Official Build 1 report: Benchmarking ChatGPT, Gemini, and Claude on explanation, research, and writing tasks with evaluation scoring matrix.',
     createdAt: '13/10/2026'
   },
   {
     id: 'kb-file-build-4',
     sectionId: 'academic-resources',
-    title: 'build_4_career_starter_pack.pdf.pdf',
+    title: 'build_4_career_starter_pack.pdf',
     type: 'file',
-    location: 'knowledge base/build_4_career_starter_pack.pdf.pdf',
+    location: 'knowledge base/build_4_career_starter_pack.pdf',
     notes: 'Official Build 4 draft: Job application portfolio tailored to CIS Trainee Developer role with editable placeholders for applicant details.',
     createdAt: '16/10/2026'
   }
@@ -186,9 +186,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Load persistent data from LocalStorage
 function loadData() {
   const OLD_PATH_MAP = {
-    'knowledge base/Hands-On Lab_ Comparing AI Tools - IMCA_Student.pdf': 'knowledge base/build_1_ai_tools_comparison.pdf.pdf',
-    'knowledge base/Personal Prompt Playbook - Build 2.pdf': 'knowledge base/build_2_personal_ai_study_kit.pdf.pdf',
-    'knowledge base/Career_Starter_Pack_Assignment.pdf': 'knowledge base/build_4_career_starter_pack.pdf.pdf'
+    'knowledge base/Hands-On Lab_ Comparing AI Tools - IMCA_Student.pdf': 'knowledge base/build_1_ai_tools_comparison.pdf',
+    'knowledge base/Personal Prompt Playbook - Build 2.pdf': 'knowledge base/build_2_personal_ai_study_kit.pdf',
+    'knowledge base/Career_Starter_Pack_Assignment.pdf': 'knowledge base/build_4_career_starter_pack.pdf'
   };
 
   try {
