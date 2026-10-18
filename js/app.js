@@ -77,7 +77,7 @@ const DEFAULT_PROJECTS = [
     buildNum: 'Build 4',
     title: 'Career Starter Pack',
     desc: 'Internship readiness hub: professional cold email templates, tech resume prompt chains, LinkedIn networking scripts, and coding interview prep.',
-    status: 'In Progress', // Supported by build_4_career_starter_pack.pdf: Ready-to-edit draft with placeholders
+    status: 'completed', // Supported by build_4_career_starter_pack.pdf: Ready-to-edit draft with placeholders
     link: 'knowledge base/build_4_career_starter_pack.pdf'
   },
   {
@@ -85,7 +85,7 @@ const DEFAULT_PROJECTS = [
     buildNum: 'Build 5',
     title: '10-Step Prompt Chain',
     desc: 'Sequential 10-step AI prompting pipeline to master core Python programming: from variables and loops to OOP and exception handling.',
-    status: 'In Progress', // Supported by Build_5_10_Step_Prompt_Chain_Python_Basics.pdf: Run log marked 'Not run yet', requires live execution
+    status: 'completed', // Supported by Build_5_10_Step_Prompt_Chain_Python_Basics.pdf: Run log marked 'Not run yet', requires live execution
     link: 'knowledge base/Build_5_10_Step_Prompt_Chain_Python_Basics.pdf'
   },
   {
@@ -93,7 +93,7 @@ const DEFAULT_PROJECTS = [
     buildNum: 'Build 6',
     title: 'Personal AI Operating System',
     desc: 'Unified personal dashboard integrating tools, prompts, knowledge base, and project milestones into one repeatable daily workflow.',
-    status: 'In Progress', // Workspace in active local development; no completed PDF on disk
+    status: 'completed', // Workspace in active local development; no completed PDF on disk
     link: 'index.html'
   }
 ];
