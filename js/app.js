@@ -141,7 +141,7 @@ const DEFAULT_KB_ITEMS = [
     sectionId: 'academic-resources',
     title: 'build_4_career_starter_pack.pdf',
     type: 'file',
-    location: 'knowledge base/build_4_career_starter_pack.pdf',
+    location: './knowledge base/build_4_career_starter_pack.pdf',
     notes: 'Official Build 4 draft: Job application portfolio tailored to CIS Trainee Developer role with editable placeholders for applicant details.',
     createdAt: '16/10/2026'
   }
@@ -185,11 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Load persistent data from LocalStorage
 function loadData() {
-  const OLD_PATH_MAP = {
-    'knowledge base/Hands-On Lab_ Comparing AI Tools - IMCA_Student.pdf': 'knowledge base/build_1_ai_tools_comparison.pdf',
-    'knowledge base/Personal Prompt Playbook - Build 2.pdf': 'knowledge base/build_2_personal_ai_study_kit.pdf',
-    'knowledge base/Career_Starter_Pack_Assignment.pdf': 'knowledge base/build_4_career_starter_pack.pdf'
-  };
+  const OLD_PATH_MAP = { };
 
   try {
     const savedTools = localStorage.getItem(STORAGE_KEYS.TOOLS);
